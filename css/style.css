@@ -1,0 +1,25 @@
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: none; }
+
+ul {
+  list-style-type: none; }
+
+.p0 {
+  padding: 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.razdelitel_img {
+  height: 227px;
+  width: 1170px;
+  background-image: url("../img/razdelitel.png");
+  background-size: cover; }
+
+.tit {
+  text-transform: uppercase; }
