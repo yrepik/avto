@@ -1,15 +1,133 @@
-
 .header_avto{
+	display: block;
+	background-size: cover;
+	height: 710px;
+    width: 100%;
+	background-image: url('../img/fon_head.png');
+	h2{
+		color: #ffec00;
+		text-align: right;
+	}
+	img{
+		position: absolute;
+		z-index:1000;
+		height: 339px;
+    	width: auto;
+    	margin-left: 196px;
+    	margin-top: 245px;
+	}
 
 }
+
+.header_form{
+	height: 408px;
+	position: relative;
+	float: right;
+	width: 25%;
+	margin-top: 4px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-top: 37px;
+	border: 7px solid #ffec00;
+	border-radius: 10px;
+	background-color: #0a0a0a;
+	h2{	
+		padding: 27px 10px 25px 10px;
+		margin: 0;
+		color: #ffec00;
+		font-size: 16px;
+		text-align: right;
+		font-family: $pl;
+		b{
+			font-size: 23px;
+			font-family: $pb;
+		}
+	}
+	input{
+		padding: 0 15px;
+		width: 100%;
+		background-color: #eeefea;
+		line-height: 44px;
+		border: none;
+		
+	}
+	button{
+		background-color: #ffec00;
+		border: none;
+		width: 100%;
+    	margin-left: 25px;
+    	margin-top: 4px;
+	}	
+}
+
 .razdelitel_img{
 	height: 227px;
 	width: 1170px;
 	background-image: url('../img/razdelitel.png');
 	background-size: cover;
 }
-.tit{
+
+h2{
+	font-family: $pl;
+	font-size: 38px;
 	text-transform: uppercase;
-	
+	text-align: center;
+	b{
+		font-family: $pb;
+		font-size: 39px;
+		text-transform: uppercase;
+	}
+}	
+
+
+.howto{
+	width: 100%;
+	&__item{
+		float: left;
+		width: 33.3%;
+		text-align: -webkit-center;
+		position:relative;
+		&:last-of-type{
+			&:after{
+				content: none;
+			}
+		}
+		&:after{
+			content: "";
+			width: 29px;
+			height: 52px;
+			background-image: url("../img/arrow.png");
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 75px;
+			right: -29px;
+		}
+		&_thumb {
+			position: relative;
+			padding-top: 10px;
+			width: 125px;
+			height: 125px;
+			border-radius: 66px;
+			background-color: #898989;
+			margin-top: 25px;
+			img{
+				position: relative;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%);
+				   -moz-transform: translate(-50%);
+				    -ms-transform: translate(-50%);
+				     -o-transform: translate(-50%);
+				        transform: translate(-50%);
+			}
+		}
+		.big {
+			margin-top: 0;
+			width: 162px;
+			height: 162px;
+			border-radius: 80px;
+		}
+	}
 }
+
 

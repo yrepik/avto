@@ -89,7 +89,7 @@ function add_styles() { // добавление стилей
     if(is_admin()) return false; // если мы в админке - ничего не делаем
     wp_enqueue_style( 'libs', get_template_directory_uri().'/css/libs.min.css' );// бутстрап
     wp_enqueue_style( 'custom-styles', get_template_directory_uri().'/css/style.min.css' ); 
-    wp_enqueue_style( 'styles', get_template_directory_uri().'/css/style.css' ); 
+    wp_enqueue_style( 'styles', get_template_directory_uri().'/css/style.min.css' ); 
 	wp_enqueue_style( 'main', get_template_directory_uri().'/style.css' ); // основные стили шаблона
 }
 

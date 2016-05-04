@@ -1,0 +1,20 @@
+$pb: 'PantonBlackCaps'; 
+$pl: 'PantonLightCaps';
+
+@font-face { 
+font-family: 'PantonBlackCaps'; 
+src: url('../fonts/Panton/PantonBlackCaps.eot') format('embedded-opentype'), 
+url('../fonts/Panton/PantonBlackCaps.woff2') format('woff2'), 
+url('../fonts/Panton/PantonBlackCaps.woff') format('woff'), 
+url('../fonts/Panton/PantonBlackCaps.ttf') format('truetype'), 
+url('../fonts/Panton/PantonBlackCaps.svg') format('svg'); 
+} 
+
+@font-face { 
+font-family: 'PantonLightCaps'; 
+src: url('../fonts/Panton/PantonLightCaps.eot') format('embedded-opentype'), 
+url('../fonts/Panton/PantonLightCaps.woff2') format('woff2'), 
+url('../fonts/Panton/PantonLightCaps.woff') format('woff'), 
+url('../fonts/Panton/PantonLightCaps.ttf') format('truetype'), 
+url('../fonts/Panton/PantonLightCaps.svg') format('svg'); 
+} 
