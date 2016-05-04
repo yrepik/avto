@@ -18,6 +18,7 @@ gulp.task('sass', function() { // Создаем таск Sass
             cascade: true
         })) // Создаем префиксы
         .pipe(gulp.dest('css')) // Выгружаем результата в папку app/css
+        .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({
             stream: true
         })) // Обновляем CSS на странице при изменении
@@ -27,6 +28,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         proxy: {
             target: 'wp-proj' // Директория для сервера - app
+            //target: 'wp.dev' // Директория для сервера - app
         },
         ghostMode: {
             clicks: true,

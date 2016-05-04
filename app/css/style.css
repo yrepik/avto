@@ -6,6 +6,12 @@ a {
 ul {
   list-style-type: none; }
 
+.block_title {
+  color: #fff;
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 15px; }
+
 .p0 {
   padding: 0; }
 
@@ -16,4 +22,10 @@ ul {
   text-align: right; }
 
 .razdelitel_img {
-  background-image: url("../img/razdelitel.png"); }
+  height: 227px;
+  width: 1170px;
+  background-image: url("../img/razdelitel.png");
+  background-size: cover; }
+
+.tit {
+  text-transform: uppercase; }

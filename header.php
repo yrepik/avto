@@ -27,5 +27,4 @@
 </head>
 <body <?php body_class(); // все классы для body ?>>
 	<header>
-	
 	</header>
