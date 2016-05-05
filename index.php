@@ -22,10 +22,10 @@ get_header(); // подключаем header.php ?>
 		</form>
 	</div>
 </sectiin>
-<!--<section class="razdelitel">
-	<div class="razdelitel_img"></div>
+<section class="razdelitel">
+	<div class="container"></div>
 
-</section>-->
+</section>
 <section class="howto">
 	<div class="container">
 		<div class="tit">
@@ -48,6 +48,72 @@ get_header(); // подключаем header.php ?>
 				<img src="<?php bloginfo('template_directory'); ?>/img/car.png" alt="" />
 			</div>
 			<h4>Заполните форму на нашем сайте либо звоните нам по тел.:  +9815228413 </h4>
+		</div>
+	</div>
+</section>
+<section class="car_one">
+	<div class="container">
+		<h2><b>Не нашли</b> комплектующие для своего авто?</h2>
+		<h4>Оставьте заявку и мы вам немедленно перезвони, поможем и подскажем</h4>
+		<form action="" class="car_one_form" novalidate  method="post">
+			<div class="form_line">
+				<input type="text" name="name" placeholder="Ваше имя">
+				<input type="tel" name="tel" placeholder="Телефон">
+				<button><h4>Отправить</h4></button>
+			</div>
+		</form>
+		<img src="<?php bloginfo('template_directory'); ?>/img/orange_car.png" alt="" />
+	</div>
+</section>
+<section class="car_two">
+	<div class="container">
+		<h2>Причины выбрать нас</h2>
+			<div class="whyweare__item">
+				<img src="<?php bloginfo('template_directory'); ?>/img/case.png" alt="" />
+				<h5>выгодные цены, гибкая система скидок</h5>
+			</div>
+			<div class="whyweare__item">
+				<img src="<?php bloginfo('template_directory'); ?>/img/gear.png" alt="" />
+				<h5>Более 10 000 запчастей всегда в наличии <br><small>*на складе поставщика</small></h5>
+			</div>
+			<div class="whyweare__item">
+				<img src="<?php bloginfo('template_directory'); ?>/img/service.png" alt="" />
+				<h5>Наличие собственного автосервиса</h5>
+			</div>
+			<div class="whyweare__item">
+				<img src="<?php bloginfo('template_directory'); ?>/img/delivery.png" alt="" />
+				<h5>Доставка по городу</h5>
+			</div>
+			<div class="whyweare__item">
+				<img src="<?php bloginfo('template_directory'); ?>/img/hands.png" alt="" />
+				<h5>индивидуальный подход и человеческое отношение</h5>
+			</div>
+			<div class="whyweare__item">
+				<img src="<?php bloginfo('template_directory'); ?>/img/like.png" alt="" />
+				<h5>95% клиентов становятся постоянными</h5>
+			</div>
+	</div>
+</section>
+<section class="comment">
+	<div class="container">
+		<h2><b>Отзывы</b> наших клиентов</h2>
+		<div class="comment__item">
+			<div class="comment__item_thumb">
+				<img src="<?php bloginfo('template_directory'); ?>/img/userpic_1.png" alt="" />
+			</div>
+			<div class="comment__item_text"></div>
+		</div>
+		<div class="comment__item">
+			<div class="comment__item_thumb">
+				<img src="<?php bloginfo('template_directory'); ?>/img/userpic_2.png" alt="" />
+			</div>
+			<div class="comment__item_text"></div>
+		</div>
+		<div class="comment__item">
+			<div class="comment__item_thumb">
+				<img src="<?php bloginfo('template_directory'); ?>/img/userpic_3.png" alt="" />
+			</div>
+			<div class="comment__item_text"></div>
 		</div>
 	</div>
 </section>

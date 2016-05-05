@@ -7,6 +7,14 @@
 	h2{
 		color: #ffec00;
 		text-align: right;
+		font-family: $pl;
+		font-size: 38px;
+		text-transform: uppercase;
+	b{
+		font-family: $pb;
+		font-size: 39px;
+		text-transform: uppercase;
+		}
 	}
 	img{
 		position: absolute;
@@ -20,11 +28,11 @@
 }
 
 .header_form{
+	padding: 0 20px;
 	height: 408px;
 	position: relative;
 	float: right;
 	width: 25%;
-	margin-top: 4px;
 	font-size: 12px;
 	letter-spacing: 2px;
 	margin-top: 37px;
@@ -35,12 +43,14 @@
 		padding: 27px 10px 25px 10px;
 		margin: 0;
 		color: #ffec00;
-		font-size: 16px;
+		font-size: 13px;
 		text-align: right;
 		font-family: $pl;
 		b{
-			font-size: 23px;
+			text-transform: none;
+			font-size: 20px;
 			font-family: $pb;
+			
 		}
 	}
 	input{
@@ -49,25 +59,21 @@
 		background-color: #eeefea;
 		line-height: 44px;
 		border: none;
+		margin: 12px 0;
 		
 	}
 	button{
 		background-color: #ffec00;
 		border: none;
 		width: 100%;
-    	margin-left: 25px;
-    	margin-top: 4px;
+    	margin-left: 0px;
+    	margin-top: 12px;
 	}	
 }
 
-.razdelitel_img{
-	height: 227px;
-	width: 1170px;
-	background-image: url('../img/razdelitel.png');
-	background-size: cover;
-}
 
-h2{
+/*h2{
+	color: #000000;
 	font-family: $pl;
 	font-size: 38px;
 	text-transform: uppercase;
@@ -77,11 +83,30 @@ h2{
 		font-size: 39px;
 		text-transform: uppercase;
 	}
-}	
-
+}	*/
+.razdelitel{
+	display: block;
+	background-size: cover;
+	height: 136px;
+    width: 100%;
+	background-image: url('../img/razdelitel.png');
+	background-size: cover;
+}
 
 .howto{
 	width: 100%;
+	h2{
+		color: #000000;
+		font-family: $pl;
+		font-size: 38px;
+		text-transform: uppercase;
+		text-align: center;
+		b{
+			font-family: $pb;
+			font-size: 39px;
+			text-transform: uppercase;
+		}
+	}
 	&__item{
 		float: left;
 		width: 33.3%;
@@ -99,20 +124,20 @@ h2{
 			background-image: url("../img/arrow.png");
 			background-repeat: no-repeat;
 			position: absolute;
-			top: 75px;
+			top: 54px;
 			right: -29px;
 		}
 		&_thumb {
 			position: relative;
-			padding-top: 10px;
+			
 			width: 125px;
 			height: 125px;
 			border-radius: 66px;
 			background-color: #898989;
 			margin-top: 25px;
 			img{
-				position: relative;
-				top: 50%;
+				position: absolute;
+				top: 16%;
 				left: 50%;
 				-webkit-transform: translate(-50%);
 				   -moz-transform: translate(-50%);
@@ -130,4 +155,146 @@ h2{
 	}
 }
 
+.car_one{
+	background-color: #e8e8e8;
+	height: 690px;
+	h2{
+		color: #000000;
+		font-family: $pl;
+		font-size: 38px;
+		text-transform: uppercase;
+		text-align: center;
+		b{
+			font-family: $pb;
+			font-size: 39px;
+			text-transform: uppercase;
+		}
+	}
+	h4{
+		color: #000000;
+		font-family: $pl;
+		font-size: 23px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	img{
+		position: relative;
+    	height: 415px;
+    	float: left;
+    	width: auto;
+    	top: 71px;
+    	left: 11px;
+	}   
+}
+.car_one_form{
+	padding: 0px 125px 0 125px;
+	float: right;
+	width: 100%;
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-top: 37px;
+	h4{
+		color: #000000;
+		font-family: $pb;
+		font-size: 19px;
+		text-transform: uppercase;
+		text-align: left;
+    	padding-left: 24px;
+	}
+	.form_line{
+		width: 100%;
+		input{
+			padding: 0 15px;
+			width: 25%;
+			background-color: #eeefea;
+			line-height: 44px;
+			border: none;
+			margin-right: 30px;
+			
+		}
+		button{
+			background-color: #ffec00;
+			border: none;
+			width: 25%;
+    		margin-left: 152px;
+    		margin-top: 12px;
+		}
+	}
+}
+.car_two{
+	display: block;
+	background-size: cover;
+	height: 632px;
+    width: 100%;
+	background-image: url('../img/fon_car_two.png');
+	h2{
+		margin-top: 80px;
+		color: #ffec00;
+		text-align: center;
+		font-family: $pl;
+		font-size: 46px;
+		text-transform: uppercase;
+	}
+	.whyweare__item{
+		position: relative;
+		height: 100px;
+		float: left;
+		width: 13.6%;
+		border: 3px solid #ffec00;
+		margin: 66px 110px 66px 110px;
+		padding: 18px 5px 10px 5px;;
+		text-align: center;
+		h5{
+			color: #FFFFFF;
+			text-align: center;
+			font-family: $pl;
+			font-size: 14px;
+			text-transform: uppercase;
+			small{
+				margin: none;
+				text-align: center;
+				color: #FFFFFF;
+				font-size: 7px;
+				text-align: center;
+				font-family: $pl;
+			}
+		}
+		img{
+			position: absolute;
+			left: 50%;
+			-webkit-transform: translate(-50%, -102%);
+			   -moz-transform: translate(-50%, -102%);
+			    -ms-transform: translate(-50%, -102%);
+			     -o-transform: translate(-50%, -102%);
+			        transform: translate(-50%, -102%);
+		}
 
+	}
+}
+.comment{
+	display: block;
+	background-size: cover;
+	height: 705px;
+    width: 100%;
+	background-image: url('../img/fon_comment.png');
+	float: left;
+	h2{
+		margin-top: 80px;
+		color: #000000;
+		text-align: center;
+		font-family: $pl;
+		font-size: 40px;
+		text-transform: uppercase;
+		b{
+			font-family: $pb;
+		}
+	}
+	img{
+		border: 7px solid #ffec00;
+	}
+	.comment__item{
+		position: relative;
+		float: left;
+	}
+}
