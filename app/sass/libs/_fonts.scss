@@ -1,5 +1,6 @@
 $pb: 'PantonBlackCaps'; 
 $pl: 'PantonLightCaps';
+$im: 'Impact';
 
 @font-face { 
 font-family: 'PantonBlackCaps'; 
@@ -17,4 +18,13 @@ url('../fonts/Panton/PantonLightCaps.woff2') format('woff2'),
 url('../fonts/Panton/PantonLightCaps.woff') format('woff'), 
 url('../fonts/Panton/PantonLightCaps.ttf') format('truetype'), 
 url('../fonts/Panton/PantonLightCaps.svg') format('svg'); 
+} 
+
+@font-face { 
+font-family: 'Impact'; 
+src: url('../fonts/Impact/Impact.eot') format('embedded-opentype'), 
+url('../fonts/Impact/Impact.woff2') format('woff2'), 
+url('../fonts/Impact/Impact.woff') format('woff'), 
+url('../fonts/Impact/Impact.ttf') format('truetype'), 
+url('../fonts/Impact/Impact.svg') format('svg'); 
 } 

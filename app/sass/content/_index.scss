@@ -40,16 +40,18 @@
 	border-radius: 10px;
 	background-color: #0a0a0a;
 	h2{	
-		padding: 27px 10px 25px 10px;
+		padding: 27px 0px 25px 0px;
 		margin: 0;
 		color: #ffec00;
-		font-size: 13px;
-		text-align: right;
+		 font-size: 14px;
+    	line-height: 19px;
+		text-align: center;
 		font-family: $pl;
 		b{
 			text-transform: none;
-			font-size: 20px;
-			font-family: $pb;
+			font-size: 28px;
+			font-family: $im;
+			font-weight: 100;
 			
 		}
 	}
@@ -67,24 +69,11 @@
 		border: none;
 		width: 100%;
     	margin-left: 0px;
-    	margin-top: 12px;
+    	margin-top: 5px;
 	}	
 }
-
-
-/*h2{
-	color: #000000;
-	font-family: $pl;
-	font-size: 38px;
-	text-transform: uppercase;
-	text-align: center;
-	b{
-		font-family: $pb;
-		font-size: 39px;
-		text-transform: uppercase;
-	}
-}	*/
 .razdelitel{
+	float: left;
 	display: block;
 	background-size: cover;
 	height: 136px;
@@ -95,6 +84,7 @@
 
 .howto{
 	width: 100%;
+	float: left;
 	h2{
 		color: #000000;
 		font-family: $pl;
@@ -103,7 +93,7 @@
 		text-align: center;
 		b{
 			font-family: $pb;
-			font-size: 39px;
+			font-size: 38px;
 			text-transform: uppercase;
 		}
 	}
@@ -155,7 +145,54 @@
 	}
 }
 
+.catalog{
+	float: left;
+	width: 100%;
+	&__flex{
+		display: flex;
+		width: 100%;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	h2{
+		color: #000000;
+		font-family: $pl;
+		font-size: 38px;
+		text-transform: uppercase;
+		text-align: center;
+		b{
+			font-family: $pb;
+			font-size: 38px;
+			text-transform: uppercase;
+		}
+	}
+	h4{
+		color: #000000;
+		font-family: $pl;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		b{
+			font-family: $pb;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+	}
+	.catalog__item{
+		height: 370px;
+		width: 255px;
+	}
+}
+
+
+
+
 .car_one{
+	width: 100%;
+	float: left;
 	background-color: #e8e8e8;
 	height: 690px;
 	h2{
@@ -223,6 +260,7 @@
 	}
 }
 .car_two{
+	float: left;
 	display: block;
 	background-size: cover;
 	height: 632px;
@@ -280,7 +318,7 @@
 	background-image: url('../img/fon_comment.png');
 	float: left;
 	h2{
-		margin-top: 80px;
+		margin-top: 60px;
 		color: #000000;
 		text-align: center;
 		font-family: $pl;
@@ -292,9 +330,134 @@
 	}
 	img{
 		border: 7px solid #ffec00;
+		border-radius: 10px;
+		height: 100px;
+		width: 100%;
 	}
 	.comment__item{
 		position: relative;
+		width: 25%;
 		float: left;
+		margin: 60px 47px;
+		&_text{
+			position: relative;
+			margin-top: 40px;
+			height: 335px;
+			width: 100%;
+			background-color: #FFF;
+			h5{
+				color: #000000;
+				font-family: $pl;
+				font-size: 14px;
+				text-transform: uppercase;
+				text-align: center;
+				padding: 20px 10px 0 10px;
+				b{
+					font-family: $pb;
+					font-size: 25px;
+					padding-top: 100px;
+				}
+
+			}
+			p{
+				color: #000000;
+				font-family: $pl;
+				font-size: 14px;
+				text-transform: uppercase;
+				text-align: center;
+				padding: 15px 20px 15px 20px;
+			}
+		}	
+	}
+}
+.footer_form{
+	display: block;
+	background-size: cover;
+	height: 815px;
+    width: 100%;
+	background-image: url('../img/fon_footer.png');
+	float: left;
+	.border{
+		margin-top: 40px;
+		height: 700px;
+		width: 60%;
+		border: 7px solid #ffec00;
+    	border-radius: 10px;
+    	margin-left: auto;
+    	margin-right: auto;
+		h3{
+		margin: 35px 0 35px 0;
+		color: #ffec00;
+		text-align: center;
+		font-family: $pl;
+		font-size: 27px;
+		text-transform: uppercase;
+		}
+		img{
+			position: absolute;
+    		z-index: 1;
+    		height: 261px;
+   			width: auto;
+    		margin-left: -75px;
+    		margin-top: 139px;
+		}
+		.connection{
+			display: block;
+			float: left;
+		}
+	}
+}
+.footer_form_end{
+	display: block;
+	width: 100%;
+	h2{
+		padding: 10px;
+		float: left;
+		width: 40%;
+		margin-top: 6px;
+		color: #ffec00;
+		text-align: center;
+		font-family: $pl;
+		font-size: 19px;
+		text-transform: none;
+		line-height: 47px;
+		font-weight: 900;
+		b{
+			font-family: $im;
+			font-size: 34px;
+			padding-top: 100px;
+			font-weight: 100;
+		}
+	}
+	.form_line{
+		float: left;
+		width: 60%;
+		input{
+			padding: 0 15px;
+			width: 42%;
+			background-color: #eeefea;
+			line-height: 31px;
+			border: none;
+			margin-right: 30px;
+			margin-top: 20px;
+		}
+		button{
+			padding: 0 15px;
+			width: 42%;
+			background-color: #eeefea;
+			line-height: 44px;
+			border: none;
+			margin-right: 30px;
+			background-color: #ffec00;
+    		margin-left: 0px;
+    		margin-top: 12px;
+			h4{
+				margin-top: 5px;
+    			margin-bottom: 8px;
+    			color: #000000;
+				text-align: center;
+				font-family: $pb;
+			}
+		}
 	}
 }
