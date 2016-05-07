@@ -62,8 +62,16 @@
 		line-height: 44px;
 		border: none;
 		margin: 12px 0;
-		
 	}
+	input::-webkit-input-placeholder {
+		color:#000000;
+		font-size: 17px;
+		font-family: $pl;
+		text-transform: uppercase;
+	}
+		::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
+		:-moz-placeholder           {color:#000000;}/* Firefox 18- */
+		:-ms-input-placeholder {color:red;}
 	button{
 		background-color: #ffec00;
 		border: none;
@@ -91,6 +99,7 @@
 		font-size: 38px;
 		text-transform: uppercase;
 		text-align: center;
+		margin: 20px 0 20px 0;
 		b{
 			font-family: $pb;
 			font-size: 38px;
@@ -102,6 +111,7 @@
 		width: 33.3%;
 		text-align: -webkit-center;
 		position:relative;
+		margin: 20px 0 50px 0;
 		&:last-of-type{
 			&:after{
 				content: none;
@@ -119,7 +129,6 @@
 		}
 		&_thumb {
 			position: relative;
-			
 			width: 125px;
 			height: 125px;
 			border-radius: 66px;
@@ -142,12 +151,21 @@
 			height: 162px;
 			border-radius: 80px;
 		}
+		h4{
+			color: #000000;
+			font-family: $pl;
+			text-transform: uppercase;
+			width: 50%;
+    		font-size: 24px;
+    		text-align: center;
+		}
 	}
 }
 
 .catalog{
 	float: left;
 	width: 100%;
+	padding: 100px 0 75px 0;
 	&__flex{
 		display: flex;
 		width: 100%;
@@ -175,6 +193,7 @@
 		font-size: 20px;
 		text-transform: uppercase;
 		text-align: center;
+		margin-bottom: 50px;
 		b{
 			font-family: $pb;
 			font-size: 20px;
@@ -184,6 +203,38 @@
 	.catalog__item{
 		height: 370px;
 		width: 255px;
+		margin: 50px 60px;
+		color: #000000;
+		text-transform: uppercase;
+		text-align: center;
+		h4{
+			font-family: $pb;
+			font-size: 23px;
+			margin-bottom: 30px;
+		}
+		p{
+			font-family: $pl;
+			font-size: 16px;
+			margin-top: 30px;
+		}
+		button{
+			background-color: #ffec00;
+			border: none;
+			width: 255px;
+    		margin-left: -1px;
+    		margin-top: 12px;
+    		border-radius: 10px;
+    		h5{
+    			font-family: $pb;
+				font-size: 18px;
+    		}
+		}
+		&_pic{
+			height: 190px;
+		}
+		&_text{
+			height: 80px;
+		}
 	}
 }
 
@@ -191,6 +242,8 @@
 
 
 .car_one{
+	padding: 25px 0 10px 0;
+	display: block;
 	width: 100%;
 	float: left;
 	background-color: #e8e8e8;
@@ -217,11 +270,11 @@
 	
 	img{
 		position: relative;
-    	height: 415px;
+    	height: 390px;
     	float: left;
     	width: auto;
     	top: 71px;
-    	left: 11px;
+    	left: 50px;
 	}   
 }
 .car_one_form{
@@ -248,14 +301,23 @@
 			line-height: 44px;
 			border: none;
 			margin-right: 30px;
-			
 		}
+		input::-webkit-input-placeholder {
+		color:#000000;
+		font-size: 18px;
+		font-family: $pl;
+		text-transform: uppercase;
+	}
+		::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
+		:-moz-placeholder           {color:#000000;}/* Firefox 18- */
+		:-ms-input-placeholder {color:red;}
 		button{
 			background-color: #ffec00;
 			border: none;
 			width: 25%;
     		margin-left: 152px;
     		margin-top: 12px;
+    		
 		}
 	}
 }
@@ -317,8 +379,9 @@
     width: 100%;
 	background-image: url('../img/fon_comment.png');
 	float: left;
+	padding: 40px 0 40px 0;
 	h2{
-		margin-top: 60px;
+		/*margin-top: 60px;*/
 		color: #000000;
 		text-align: center;
 		font-family: $pl;
@@ -328,17 +391,24 @@
 			font-family: $pb;
 		}
 	}
-	img{
-		border: 7px solid #ffec00;
-		border-radius: 10px;
-		height: 100px;
-		width: 100%;
-	}
+	
 	.comment__item{
 		position: relative;
 		width: 25%;
 		float: left;
 		margin: 60px 47px;
+		&_thumb{
+			width: 100%;
+			height: 100px;
+			border: 7px solid #ffec00;
+			border-radius: 10px;
+			
+			@include overflow-img;
+			img {
+				max-width: 125%;
+				
+			}
+		}
 		&_text{
 			position: relative;
 			margin-top: 40px;
@@ -371,6 +441,7 @@
 	}
 }
 .footer_form{
+	padding: 40px 0 50px 0;
 	display: block;
 	background-size: cover;
 	height: 815px;
@@ -404,6 +475,55 @@
 		.connection{
 			display: block;
 			float: left;
+		}
+		.cont__info{
+			float: left;
+			width: 96%;
+			display: inline-block;
+			position: relative;
+   			top: 247px;
+   			margin-top: 30px;
+			.icon{
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				background-position: 50% 100%;
+				background-repeat: no-repeat;
+				&_tel{
+					background-image: url('../img/tel.png');
+				}
+				&_skype{
+					background-image: url('../img/skype.png');
+				}
+			}
+			h2{
+				width: calc(100% - 255px);
+    			float: inherit;
+    			display: inline-block;
+    			margin: 0;
+    			color: #000000;
+				text-align: right;
+				font-family: $pl;
+				font-size: 30px;
+				padding-right: 30px;
+			}
+			.knopka{
+				display: inline-block;
+				color: #000;
+				button{
+					background-color: #ffec00;
+					border: none;
+					width: 255px;
+    				margin-left: 0;
+    				margin-top: 0;
+    				height: 40px;
+    				h5{
+    					text-align: center;
+						font-family: $pb;
+						font-size: 15px;
+    				}
+    			}
+			}
 		}
 	}
 }
@@ -441,6 +561,15 @@
 			margin-right: 30px;
 			margin-top: 20px;
 		}
+		input::-webkit-input-placeholder {
+		color:#000000;
+		font-size: 15px;
+		font-family: $pl;
+		text-transform: uppercase;
+	}
+		::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
+		:-moz-placeholder           {color:#000000;}/* Firefox 18- */
+		:-ms-input-placeholder {color:red;}
 		button{
 			padding: 0 15px;
 			width: 42%;

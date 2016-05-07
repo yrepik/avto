@@ -57,14 +57,15 @@ get_header(); // подключаем header.php ?>
 		<h4>Заполните форму <b>“узнать цену”</b> прямо сейчас и наши менеджеры свяжуться с вами и
 дадут полную информацию по цене и наличию запчасти</h4>
 <div class="catalog__flex">
-	<div class="catalog__item">
+		<div class="catalog__item">
 			<h4>Детали двигателя</h4>
 			<div class="catalog__item_pic">
 			<img src="<?php bloginfo('template_directory'); ?>/img/engine.png" alt="" />
 			</div>
 			<div class="catalog__item_text">
 				<p>Ремни ГРМ, ролики, датчики и многое другое</p>
-			</div>	
+			</div>
+			<button><h5>Узнать цену</h5></button>
 		</div>
 		<div class="catalog__item">
 			<h4>тормозная система</h4>
@@ -73,7 +74,8 @@ get_header(); // подключаем header.php ?>
 			</div>
 			<div class="catalog__item_text">
 				<p>тормозные диски, колодки, суппорта</p>
-			</div>	
+			</div>
+			<button><h5>Узнать цену</h5></button>	
 		</div>
 		<div class="catalog__item">
 			<h4>детали подвески</h4>
@@ -83,6 +85,7 @@ get_header(); // подключаем header.php ?>
 			<div class="catalog__item_text">
 				<p>амортизаторы, рычаги, сайлентблоки, стойки</p>
 			</div>	
+			<button><h5>Узнать цену</h5></button>
 		</div>
 		<div class="catalog__item">
 			<h4>детали сцепления</h4>
@@ -92,6 +95,7 @@ get_header(); // подключаем header.php ?>
 			<div class="catalog__item_text">
 				<p>диск сцепления, нажимной диск, система управления,  маховик</p>
 			</div>	
+			<button><h5>Узнать цену</h5></button>
 		</div>
 		<div class="catalog__item">
 			<h4>охлаждение</h4>
@@ -101,6 +105,7 @@ get_header(); // подключаем header.php ?>
 			<div class="catalog__item_text">
 				<p>радиаторы, водяные насосы, термостаты</p>
 			</div>	
+			<button><h5>Узнать цену</h5></button>
 		</div>
 		<div class="catalog__item">
 			<h4>фильтра</h4>
@@ -110,6 +115,7 @@ get_header(); // подключаем header.php ?>
 			<div class="catalog__item_text">
 				<p>Масляные, воздушные, топливные, гидравлические</p>
 			</div>	
+			<button><h5>Узнать цену</h5></button>
 		</div>
 		<div class="catalog__item">
 			<h4>масла и жидкости</h4>
@@ -119,6 +125,7 @@ get_header(); // подключаем header.php ?>
 			<div class="catalog__item_text">
 				<p>моторные, трансмиссионные жидкости ГУРа, и АКПП</p>
 			</div>	
+			<button><h5>Узнать цену</h5></button>
 		</div>
 		<div class="catalog__item">
 			<h4>аккумуляторы</h4>
@@ -128,6 +135,7 @@ get_header(); // подключаем header.php ?>
 			<div class="catalog__item_text">
 				<p>Для легковых и грузовыз авто и мотоциклов</p>
 			</div>	
+			<button><h5>Узнать цену</h5></button>
 		</div>
 </div>
 		
@@ -224,10 +232,14 @@ get_header(); // подключаем header.php ?>
 				
 			</form>
 			<img src="<?php bloginfo('template_directory'); ?>/img/footer_car.png" alt="" />
-			<!--<div class="connection">
-				<button><h4>заказать звонок</h4></button>
-				<button><h4>пишите нам в skype</h4></button>
-			</div>-->
+			<div class="cont__info">
+				<h2><span class="icon icon_tel"></span>+7 (918) 544-56-46</h2>
+				<a href="tel:+79185445646" class="knopka"><button><h5>Заказать звонок</h5></button></a>
+			</div>
+			<div class="cont__info">
+				<h2><span class="icon icon_skype"></span>autozap</h2>
+				<a href="skype:autozaps" class="knopka"><button><h5>пишите нам в skype</h5></button></a>
+			</div>
 		</div>
 	</div>
 </section>
