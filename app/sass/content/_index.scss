@@ -7,7 +7,7 @@
 	h2{
 		color: #ffec00;
 		text-align: right;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 38px;
 		text-transform: uppercase;
 	b{
@@ -46,7 +46,7 @@
 		 font-size: 14px;
     	line-height: 19px;
 		text-align: center;
-		font-family: $pl;
+		font-family: $ql;
 		b{
 			text-transform: none;
 			font-size: 28px;
@@ -66,7 +66,7 @@
 	input::-webkit-input-placeholder {
 		color:#000000;
 		font-size: 17px;
-		font-family: $pl;
+		font-family: $ql;
 		text-transform: uppercase;
 	}
 		::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
@@ -95,7 +95,7 @@
 	float: left;
 	h2{
 		color: #000000;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 38px;
 		text-transform: uppercase;
 		text-align: center;
@@ -153,7 +153,7 @@
 		}
 		h4{
 			color: #000000;
-			font-family: $pl;
+			font-family: $ql;
 			text-transform: uppercase;
 			width: 50%;
     		font-size: 24px;
@@ -177,7 +177,7 @@
 	}
 	h2{
 		color: #000000;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 38px;
 		text-transform: uppercase;
 		text-align: center;
@@ -189,7 +189,7 @@
 	}
 	h4{
 		color: #000000;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 20px;
 		text-transform: uppercase;
 		text-align: center;
@@ -213,7 +213,7 @@
 			margin-bottom: 30px;
 		}
 		p{
-			font-family: $pl;
+			font-family: $ql;
 			font-size: 16px;
 			margin-top: 30px;
 		}
@@ -250,7 +250,7 @@
 	height: 690px;
 	h2{
 		color: #000000;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 38px;
 		text-transform: uppercase;
 		text-align: center;
@@ -262,12 +262,14 @@
 	}
 	h4{
 		color: #000000;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 23px;
 		text-transform: uppercase;
 		text-align: center;
 	}
-	
+	.mob_pic{
+		display: none;
+	}
 	img{
 		position: relative;
     	height: 390px;
@@ -305,7 +307,7 @@
 		input::-webkit-input-placeholder {
 		color:#000000;
 		font-size: 18px;
-		font-family: $pl;
+		font-family: $ql;
 		text-transform: uppercase;
 	}
 		::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
@@ -332,7 +334,7 @@
 		margin-top: 80px;
 		color: #ffec00;
 		text-align: center;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 46px;
 		text-transform: uppercase;
 	}
@@ -343,12 +345,13 @@
 		width: 13.6%;
 		border: 3px solid #ffec00;
 		margin: 66px 110px 66px 110px;
-		padding: 18px 5px 10px 5px;;
+		padding: 15px 5px;;
 		text-align: center;
 		h5{
+			margin: 0;
 			color: #FFFFFF;
 			text-align: center;
-			font-family: $pl;
+			font-family: $ql;
 			font-size: 14px;
 			text-transform: uppercase;
 			small{
@@ -357,17 +360,17 @@
 				color: #FFFFFF;
 				font-size: 7px;
 				text-align: center;
-				font-family: $pl;
+				font-family: $ql;
 			}
 		}
 		img{
 			position: absolute;
 			left: 50%;
-			-webkit-transform: translate(-50%, -102%);
-			   -moz-transform: translate(-50%, -102%);
-			    -ms-transform: translate(-50%, -102%);
-			     -o-transform: translate(-50%, -102%);
-			        transform: translate(-50%, -102%);
+			-webkit-transform: translate(-50%, -160%);
+			   -moz-transform: translate(-50%, -160%);
+			    -ms-transform: translate(-50%, -160%);
+			     -o-transform: translate(-50%, -160%);
+			        transform: translate(-50%, -160%);
 		}
 
 	}
@@ -384,7 +387,7 @@
 		/*margin-top: 60px;*/
 		color: #000000;
 		text-align: center;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 40px;
 		text-transform: uppercase;
 		b{
@@ -392,9 +395,10 @@
 		}
 	}
 	
-	.comment__item{
+	.owl{
+		.comment__item{
 		position: relative;
-		width: 25%;
+		width: 75%;
 		float: left;
 		margin: 60px 47px;
 		&_thumb{
@@ -417,7 +421,7 @@
 			background-color: #FFF;
 			h5{
 				color: #000000;
-				font-family: $pl;
+				font-family: $ql;
 				font-size: 14px;
 				text-transform: uppercase;
 				text-align: center;
@@ -431,13 +435,19 @@
 			}
 			p{
 				color: #000000;
-				font-family: $pl;
+				font-family: $ql;
 				font-size: 14px;
 				text-transform: uppercase;
 				text-align: center;
 				padding: 15px 20px 15px 20px;
 			}
 		}	
+	}
+	}
+	.owl-nav{
+		position: absolute;
+		width: 5%;
+		
 	}
 }
 .footer_form{
@@ -460,7 +470,7 @@
 		margin: 35px 0 35px 0;
 		color: #ffec00;
 		text-align: center;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 27px;
 		text-transform: uppercase;
 		}
@@ -503,7 +513,7 @@
     			margin: 0;
     			color: #000000;
 				text-align: right;
-				font-family: $pl;
+				font-family: $ql;
 				font-size: 30px;
 				padding-right: 30px;
 			}
@@ -537,7 +547,7 @@
 		margin-top: 6px;
 		color: #ffec00;
 		text-align: center;
-		font-family: $pl;
+		font-family: $ql;
 		font-size: 19px;
 		text-transform: none;
 		line-height: 47px;
@@ -564,7 +574,7 @@
 		input::-webkit-input-placeholder {
 		color:#000000;
 		font-size: 15px;
-		font-family: $pl;
+		font-family:$ql;
 		text-transform: uppercase;
 	}
 		::-moz-placeholder          {color:#000000;}/* Firefox 19+ */

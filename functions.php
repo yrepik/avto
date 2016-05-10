@@ -76,6 +76,7 @@ function add_scripts() { // добавление скриптов
     wp_deregister_script('jquery'); // выключаем стандартный jquery
     wp_enqueue_script('libs',get_template_directory_uri().'/js/libs.min.js','','',true); // добавляем свой
     wp_enqueue_script('custom-scripts', get_template_directory_uri().'/js/script.min.js','','',true); // бутстрап
+    wp_enqueue_script('owl', get_template_directory_uri().'/js/owl.carousel.min.js','','',true); // бутстрап
     wp_enqueue_script('main', get_template_directory_uri().'/js/main.js','','',true); // и скрипты шаблона
 	wp_localize_script('main', 'myajax',
 		array(
@@ -90,6 +91,7 @@ function add_styles() { // добавление стилей
     wp_enqueue_style( 'libs', get_template_directory_uri().'/css/libs.min.css' );// бутстрап
     wp_enqueue_style( 'custom-styles', get_template_directory_uri().'/css/style.min.css' ); 
     wp_enqueue_style( 'styles', get_template_directory_uri().'/css/style.min.css' ); 
+    wp_enqueue_style( 'owl', get_template_directory_uri().'/css/owl.carousel.css' ); 
 	wp_enqueue_style( 'main', get_template_directory_uri().'/style.css' ); // основные стили шаблона
 }
 

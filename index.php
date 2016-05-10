@@ -153,6 +153,7 @@ get_header(); // подключаем header.php ?>
 			</div>
 		</form>
 		<img src="<?php bloginfo('template_directory'); ?>/img/orange_car.png" alt="" />
+	
 	</div>
 </section>
 <section class="car_two">
@@ -187,34 +188,46 @@ get_header(); // подключаем header.php ?>
 <section class="comment">
 	<div class="container">
 		<h2><b>Отзывы</b> наших клиентов</h2>
-		<div class="comment__item">
-			<div class="comment__item_thumb">
-				<img src="<?php bloginfo('template_directory'); ?>/img/userpic_1.png" alt="" />
-			</div>
-			<div class="comment__item_text">
-				<h5><b>Дмитрий король</b><br>г.Донецк</h5>
-				<p>Не ожидал такой оперативности. Менеджер буквально через пять минут позвонил, и уточнил заказ.Подвеску доставили домой, даже не пришлось заморачиваться что бы ее доставить. Сработали оперативно, а главное удивили цены. Пообщали сделать на следующую покупку скидку. В общем молодцы. Я доволен. Рекомендую.
-				</p>
-			</div>
-		</div>
-		<div class="comment__item">
-			<div class="comment__item_thumb">
-				<img src="<?php bloginfo('template_directory'); ?>/img/userpic_2.png" alt="" />
-			</div>
-			<div class="comment__item_text">
-				<h5><b>Анна Весникова </b><br>г.Донецк</h5>
-				<p>  Машину купила недавно и столкнулась с проблемой замены масла. После того. как я оставила заявку и менеджер перезвонил через 5 минут и порекомендовал приехать в сервис для замены масла. Сделали все быстро и качественно, даже объяснили как долить масло в следующий раз.буду обращаться еще!</p>
-			</div>
-		</div>
-		<div class="comment__item">
-			<div class="comment__item_thumb">
-				<img src="<?php bloginfo('template_directory'); ?>/img/userpic_3.png" alt="" />
-			</div>
-			<div class="comment__item_text">
-				<h5><b>Кирилл Бойко</b><br>г.Донецк</h5>
-				<p>долго искал топливный насос на китайский мопед. Оставил заявку на деталь, перезвонили и сообщили, что в наличии нет, но могут через некоторое время привезти. Все заняло около 3-х дней. На цену доставка никак не повлияла. Очень доволен. Спасибо.</p>
-			</div>
-		</div>
+				<div class="owl">
+				<div class="comment__item">
+					<div class="comment__item_thumb">
+						<img src="<?php bloginfo('template_directory'); ?>/img/userpic_1.png" alt="" />
+					</div>
+					<div class="comment__item_text">
+						<h5><b>Дмитрий король</b><br>г.Донецк</h5>
+						<p>Не ожидал такой оперативности. Менеджер буквально через пять минут позвонил, и уточнил заказ.Подвеску доставили домой, даже не пришлось заморачиваться что бы ее доставить. Сработали оперативно, а главное удивили цены. Пообщали сделать на следующую покупку скидку. В общем молодцы. Я доволен. Рекомендую.
+						</p>
+					</div>
+				</div>
+				<div class="comment__item">
+					<div class="comment__item_thumb">
+						<img src="<?php bloginfo('template_directory'); ?>/img/userpic_2.png" alt="" />
+					</div>
+					<div class="comment__item_text">
+						<h5><b>Анна Весникова </b><br>г.Донецк</h5>
+						<p>  Машину купила недавно и столкнулась с проблемой замены масла. После того. как я оставила заявку и менеджер перезвонил через 5 минут и порекомендовал приехать в сервис для замены масла. Сделали все быстро и качественно, даже объяснили как долить масло в следующий раз.буду обращаться еще!</p>
+					</div>
+				</div>
+				<div class="comment__item">
+					<div class="comment__item_thumb">
+						<img src="<?php bloginfo('template_directory'); ?>/img/userpic_3.png" alt="" />
+					</div>
+					<div class="comment__item_text">
+						<h5><b>Кирилл Бойко</b><br>г.Донецк</h5>
+						<p>долго искал топливный насос на китайский мопед. Оставил заявку на деталь, перезвонили и сообщили, что в наличии нет, но могут через некоторое время привезти. Все заняло около 3-х дней. На цену доставка никак не повлияла. Очень доволен. Спасибо.</p>
+					</div>
+				</div>
+				<div class="comment__item">
+					<div class="comment__item_thumb">
+						<img src="<?php bloginfo('template_directory'); ?>/img/userpic_1.png" alt="" />
+					</div>
+					<div class="comment__item_text">
+						<h5><b>Дмитрий король</b><br>г.Донецк</h5>
+						<p>Не ожидал такой оперативности. Менеджер буквально через пять минут позвонил, и уточнил заказ.Подвеску доставили домой, даже не пришлось заморачиваться что бы ее доставить. Сработали оперативно, а главное удивили цены. Пообщали сделать на следующую покупку скидку. В общем молодцы. Я доволен. Рекомендую.
+						</p>
+					</div>
+				</div>
+				</div>
 	</div>
 </section>
 <section class="footer_form">

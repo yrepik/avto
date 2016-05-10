@@ -1,6 +1,7 @@
 $pb: 'PantonBlackCaps'; 
 $pl: 'PantonLightCaps';
 $im: 'Impact';
+$ql: ' QanelasLight ';
 
 @font-face { 
 font-family: 'PantonBlackCaps'; 
@@ -27,4 +28,13 @@ url('../fonts/Impact/Impact.woff2') format('woff2'),
 url('../fonts/Impact/Impact.woff') format('woff'), 
 url('../fonts/Impact/Impact.ttf') format('truetype'), 
 url('../fonts/Impact/Impact.svg') format('svg'); 
+} 
+
+@font-face { 
+font-family: 'QanelasLight'; 
+src: url('../fonts/QanelasLight/QanelasLight.eot') format('embedded-opentype'), 
+url('../fonts/QanelasLight/QanelasLight.woff2') format('woff2'), 
+url('../fonts/QanelasLight/QanelasLight.woff') format('woff'), 
+url('../fonts/QanelasLight/QanelasLight.ttf') format('truetype'), 
+url('../fonts/QanelasLight/QanelasLight.svg') format('svg'); 
 } 
