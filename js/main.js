@@ -8,7 +8,7 @@ $(window).load(function () {
 		loop: true,
 		margin: 35,
 		nav : true,
-		navText: ["prev", "next"],
+		navText: false,
 		//pagination : true,
 		items: 3,
 		responsiveClass:false,
@@ -20,16 +20,41 @@ $(window).load(function () {
 			},
 			600: {
 				items: 2,
-				nav: false
+				nav: true
 			},
 			1000: {
 				items: 3,
 				nav: true,
-				loop: false
+				loop: true
 			}
 		}
 
 	
 	});
+
 	
 });
+
+$(document).ready(function() {
+	accordion_start();
+	$(".accordeon dd").hide().prev().click(function() {
+		$(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
+		$(this).next().not(":visible").slideDown().prev().addClass("active");
+	});
+});
+
+$( window ).resize(function() {
+  accordion_start();
+});
+
+function accordion_start(){
+	var ww = $(window).width();
+	if(ww <= "768"){
+		$('.catalog__item').each(function() {
+			$(this).addClass("accordeon");		
+		});		
+		
+	} else{
+		$('.catalog__item').removeClass("accordeon");
+	}
+};

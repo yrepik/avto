@@ -436,7 +436,7 @@
 			p{
 				color: #000000;
 				font-family: $ql;
-				font-size: 14px;
+				font-size: 13px;
 				text-transform: uppercase;
 				text-align: center;
 				padding: 15px 20px 15px 20px;
@@ -445,9 +445,26 @@
 	}
 	}
 	.owl-nav{
-		position: absolute;
-		width: 5%;
-		
+    	position: absolute;
+    	top: 0;
+    	width: 100%;
+    	.owl-prev {
+    		position: absolute;
+   		 	top: 200px;
+   		 	background-image: url('../img/arrow_left.png');
+   		 	background-repeat: no-repeat;
+   		 	width: 35px;
+    		height: 55px;
+		}
+		.owl-next {
+    		position: absolute;
+   		 	top: 200px;
+   		 	right:0;
+   		 	background-image: url('../img/arrow_right.png');
+   		 	background-repeat: no-repeat;
+   		 	width: 35px;
+    		height: 55px;
+		}	
 	}
 }
 .footer_form{
@@ -520,23 +537,21 @@
 			.knopka{
 				display: inline-block;
 				color: #000;
-				button{
-					background-color: #ffec00;
-					border: none;
-					width: 255px;
-    				margin-left: 0;
-    				margin-top: 0;
-    				height: 40px;
-    				h5{
-    					text-align: center;
-						font-family: $pb;
-						font-size: 15px;
-    				}
+				background-color: #ffec00;
+				border: none;
+				width: 255px;
+    			margin-left: 0;
+    			margin-top: 0;
+    			height: 46px;
+    			text-align: center;
+				font-family: $pb;
+				font-size: 15px;
+				line-height: 46px;
     			}
 			}
 		}
-	}
 }
+
 .footer_form_end{
 	display: block;
 	width: 100%;
