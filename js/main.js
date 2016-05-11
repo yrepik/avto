@@ -35,26 +35,26 @@ $(window).load(function () {
 	
 });
 
-$(document).ready(function() {
-	accordion_start();
-	$(".accordeon dd").hide().prev().click(function() {
-		$(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
-		$(this).next().not(":visible").slideDown().prev().addClass("active");
-	});
-});
+//$(document).ready(function() {
+//	accordion_start();
+//	$(".accordeon").hide().click(function() {
+//		$(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
+//		$(this).next().not(":visible").slideDown().prev().addClass("active");
+//	});
+//});
 
-$( window ).resize(function() {
-  accordion_start();
-});
+//$( window ).resize(function() {
+ // accordion_start();
+//});
 
-function accordion_start(){
-	var ww = $(window).width();
-	if(ww <= "768"){
-		$('.catalog__item').each(function() {
-			$(this).addClass("accordeon");		
-		});		
-		
-	} else{
-		$('.catalog__item').removeClass("accordeon");
-	}
-};
+//function accordion_start(){
+//	var ww = $(window).width();
+//	if(ww <= "1024"){
+//		$('.catalog__item').each(function() {
+//			$(this).addClass("accordeon");	
+//		});		
+//		
+//	} else{
+//		$('.catalog__item').removeClass("accordeon");
+//	}
+//};
