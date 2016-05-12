@@ -1,10 +1,7 @@
 // custom scripts
 $(window).load(function () {
 //$(document).ready(function() {
- 
- 
 	$(".owl").owlCarousel({
-	
 		loop: true,
 		margin: 35,
 		nav : true,
@@ -16,7 +13,6 @@ $(window).load(function () {
 			0: {
 				items: 1,
 				nav: true,
-				
 			},
 			600: {
 				items: 2,
@@ -28,33 +24,62 @@ $(window).load(function () {
 				loop: true
 			}
 		}
-
-	
 	});
-
-	
 });
 
-//$(document).ready(function() {
-//	accordion_start();
-//	$(".accordeon").hide().click(function() {
-//		$(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
-//		$(this).next().not(":visible").slideDown().prev().addClass("active");
-//	});
-//});
+$(document).ready(function () {
+    //header form
+    $(document).on('click', '.js_headerAuto', function () {
+        var name = $('.form_line__name').val(),
+            phone = $('.form_line__phone').val(),
+            email = $('.form_line__email').val(),
+            detail = $('.form_line__detail').val();
 
-//$( window ).resize(function() {
- // accordion_start();
-//});
+        $.ajax({
+            url: myajax.url,
+            type: "POST",
+            data: "action=header&name=" + name + "&phone=" + phone + "&email=" + email + "&detail=" + detail,
+            success: function (data) {
+                $('.form_line__name').val('');
+                $('.form_line__phone').val('');
+                $('.form_line__email').val('');
+                $('.form_line__detail').val('');
+            }
+        });
+        return false;
+    });
 
-//function accordion_start(){
-//	var ww = $(window).width();
-//	if(ww <= "1024"){
-//		$('.catalog__item').each(function() {
-//			$(this).addClass("accordeon");	
-//		});		
-//		
-//	} else{
-//		$('.catalog__item').removeClass("accordeon");
-//	}
-//};
+    $(document).on('click', '.js_findCar', function () {
+        var name = $('.find_car__name').val(),
+            phone = $('.find_car__phone').val();
+
+        $.ajax({
+            url: myajax.url,
+            type: "POST",
+            data: "action=find&name=" + name + "&phone=" + phone,
+            success: function (data) {
+                $('.find_car__name').val('');
+                $('.find_car__phone').val('');
+            }
+        });
+        return false;
+    });
+
+    $(document).on('click', '.js_saleForm', function () {
+        var name = $('.sale__name').val(),
+            phone = $('.sale__phone').val(),
+            email = $('.sale__email').val();
+
+        $.ajax({
+            url: myajax.url,
+            type: "POST",
+            data: "action=sale&name=" + name + "&phone=" + phone + "&email=" + email,
+            success: function (data) {
+                $('.sale__name').val('');
+                $('.sale__phone').val('');
+                $('.sale__email').val('');
+            }
+        });
+        return false;
+    });
+});

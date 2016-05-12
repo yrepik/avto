@@ -49,7 +49,6 @@
 		}
 	}
 	.catalog{
-		padding: 0 0 75px;
 		h2{
 			font-size: 30px;
 			padding-bottom: 40px;
@@ -135,7 +134,7 @@
 .header_avto{
 	display: block;
 	background-size: cover;
-	height: 730px;
+	height: 905px;
     width: 100%;
 	background-image: url('../img/mob_head_fon.png');
 	h2{
@@ -153,7 +152,6 @@
 	.header_form{
 		width: 100%;
 		float: left;
-		height: 450px;
 	}
 }
 .razdelitel{
@@ -163,14 +161,12 @@
 	&__item{
 		float: left;
 		width: 100%;
-		margin: 10px 0 10px 0 ;
 		&:after{
 			display: none;	
 		}
 	}
 }
 .catalog{
-	padding: 0 0 75px;
 	h2{
 		font-size: 23px;
 		text-align: center;
@@ -187,9 +183,8 @@
 	.catalog__flex{
 		.catalog__item{
 			margin: 10px 20px;
-			height: 420px;
 		}
-		/* .accordeon{
+		.accordeon{
 			display: block !important;
 			
 			width: 260px;
@@ -204,7 +199,7 @@
 			}
 			dd{
 				 padding: 40px 5px 10px 5px;
-			} */
+			}
 		}
 	}
 }
@@ -263,11 +258,9 @@
 		}
 	}
 	.whyweare__item{
-		margin:45px 0 35px;
+		margin:66px 0;
 		width: 100%;
-		h5{
-			font-size: 20px;
-		}
+		
 	}
 }
 .comment{
@@ -302,21 +295,13 @@
 			width: 100%;
 			font-size: 23px;
 			line-height: 28px;
-			margin-bottom: 10px;
 			b{
 				font-size: 23px;
 			}
 		}
-
 		.footer_form_end{
 			h2{
 				width: 100%;
-				font-size: 23px;
-				line-height: 28px;
-				b{
-					font-size: 23px;
-					padding-top: 0;
-				}
 			}
 			.form_line{
 				width: 100%;
@@ -350,6 +335,7 @@
 			}
 		}
 	}
+}
 }
 
 

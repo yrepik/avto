@@ -109,3 +109,161 @@ function content_class_by_sidebar() { // функция для вывода кл
 	}
 }
 
+// AJAX ACTION
+add_action( 'wp_ajax_header', 'headerForm' );
+add_action( 'wp_ajax_nopriv_header', 'headerForm' );
+
+function headerForm() {
+    if ( $_POST ) {
+        $adminMail = get_option( 'admin_email' );
+
+        if ( $_POST['name'] && $_POST['email'] ) {
+            $str = "С вашего сайта оставили заявку на обратную связь:<br>";
+            $str .= 'Имя: ' . $_POST["name"] . ' <br>';
+            $str .= 'Телефон: ' . $_POST["phone"] . ' <br>';
+            $str .= 'Почта: ' . $_POST["email"] . ' <br>';
+
+            if ( ! empty( $_POST['detail'] ) ) {
+                $str .= 'Деталь: ' . $_POST["detail"] . ' <br>';
+            }
+
+            mail( $adminMail, "Письмо с сайта Автозапчасти", $str, "Content-type: text/html; charset=UTF-8\r\n" );
+        }
+    }
+    wp_die();
+}
+
+// AJAX ACTION
+add_action( 'wp_ajax_find', 'findCarForm' );
+add_action( 'wp_ajax_nopriv_find', 'findCarForm' );
+
+function findCarForm() {
+    if ( $_POST ) {
+        $adminMail = get_option( 'admin_email' );
+
+        if ( $_POST['name'] && $_POST['phone'] ) {
+            $str = "С вашего сайта оставили заявку на комплектующие:<br>";
+            $str .= 'Имя: ' . $_POST["name"] . ' <br>';
+            $str .= 'Телефон: ' . $_POST["phone"] . ' <br>';
+
+            mail( $adminMail, "Письмо с сайта Автозапчасти", $str, "Content-type: text/html; charset=UTF-8\r\n" );
+        }
+    }
+    wp_die();
+}
+
+// AJAX ACTION
+add_action( 'wp_ajax_sale', 'saleForm' );
+add_action( 'wp_ajax_nopriv_sale', 'saleForm' );
+
+function saleForm() {
+    if ( $_POST ) {
+        $adminMail = get_option( 'admin_email' );
+
+        if ( $_POST['name'] && $_POST['phone'] ) {
+            $str = "С вашего сайта оставили заявку со скидкой 5%:<br>";
+            $str .= 'Имя: ' . $_POST["name"] . ' <br>';
+            $str .= 'Телефон: ' . $_POST["phone"] . ' <br>';
+            $str .= 'Почта: ' . $_POST["email"] . ' <br>';
+
+            mail( $adminMail, "Письмо с сайта Автозапчасти", $str, "Content-type: text/html; charset=UTF-8\r\n" );
+        }
+    }
+    wp_die();
+}
+
+
+/*------------------------------------------------ REVIEWS -----------------------------------------------------------*/
+
+add_action( 'init', 'initReviews' );
+
+function initReviews() {
+    $labels = array(
+        'name'               => 'Отзывы', // Основное название типа записи
+        'singular_name'      => 'Отзывы', // отдельное название записи типа Book
+        'add_new'            => 'Добавить отзыв',
+        'add_new_item'       => 'Добавить новый отзыв',
+        'edit_item'          => 'Редактировать отзыв',
+        'new_item'           => 'Новый отзыв',
+        'view_item'          => 'Посмотреть отзыв',
+        'search_items'       => 'Найти отзыв',
+        'not_found'          => 'Отзывов не найдено',
+        'not_found_in_trash' => 'В корзине отзывов не найдено',
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Отзывы'
+
+    );
+    $args   = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => true,
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'thumbnail' )
+    );
+    register_post_type( 'reviews', $args );
+}
+
+function reviewsShortcode() {
+    $args = array(
+        'post_type'      => 'reviews',
+        'post_status'    => 'publish',
+        'posts_per_page' => - 1
+    );
+
+    $my_query = null;
+    $my_query = new WP_Query( $args );
+
+    $parser = new Parser();
+    if ( $_POST ) {
+        echo $parser->render( TM_DIR . '/view/reviews.php', [ 'my_query' => $my_query ] );
+        die();
+    } else {
+        $parser->render( TM_DIR . '/view/reviews.php', [ 'my_query' => $my_query ] );
+    }
+}
+
+add_shortcode( 'reviews', 'reviewsShortcode' );
+
+//product realtors custom field
+function reviewCity( $post ) {
+    ?>
+    <p>
+        <span>Город: </span>
+        <input type="text" name="extra[city]" value="<?php echo get_post_meta( $post->ID, "city", 1 ); ?>">
+    </p>
+    <?php
+}
+
+//register custom fields
+function registerCustomFields() {
+    add_meta_box( 'extra_city', 'Город', 'reviewCity', 'reviews', 'normal', 'high' );
+}
+
+add_action( 'add_meta_boxes', 'registerCustomFields', 1 );
+
+/* Сохраняем данные, при сохранении поста*/
+function updateCustomFields( $post_id ) {
+    if ( ! isset( $_POST['extra'] ) ) {
+        return false;
+    }
+    foreach ( $_POST['extra'] as $key => $value ) {
+        if ( empty( $value ) ) {
+            delete_post_meta( $post_id, $key ); // удаляем поле если значение пустое
+            continue;
+        }
+
+        update_post_meta( $post_id, $key, $value ); // add_post_meta() работает автоматически
+    }
+
+    return $post_id;
+}
+
+add_action( 'save_post', 'updateCustomFields', 10, 1 );
+/*----------------------------------------------- END REVIEWS --------------------------------------------------------*/

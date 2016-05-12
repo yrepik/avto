@@ -13,12 +13,12 @@ get_header(); // подключаем header.php ?>
 		<form action="" class="header_form" novalidate  method="post">
 			<h2><b>Оставьте заявку</b> и получите скидку в 5%</h2>
 			<div class="form_line">
-				<input type="text" name="name" placeholder="Ваше имя">
-				<input type="tel" name="tel" placeholder="Ваш телефон">
-				<input type="email" name="email" placeholder="Ваш Email">
-				<input type="text" name="detal" placeholder="Требуемая деталь">
+                <input class="form_line__name" type="text" name="name" placeholder="Ваше имя">
+                <input class="form_line__phone" type="tel" name="tel" placeholder="Ваш телефон">
+                <input class="form_line__email" type="email" name="email" placeholder="Ваш Email">
+                <input class="form_line__detail" type="text" name="detal" placeholder="Требуемая деталь">
 			</div>
-			<button><h4>Оставить свою заявку</h4></button>
+            <button class="js_headerAuto"><h4>Оставить свою заявку</h4></button>
 		</form>
 	</div>
 </sectiin>
@@ -59,7 +59,6 @@ get_header(); // подключаем header.php ?>
 <div class="catalog__flex">
 			<div class="catalog__item"><h4>Детали двигателя</h4>
 				<dd>
-					
 					<div class="catalog__item_pic">
 					<img src="<?php bloginfo('template_directory'); ?>/img/engine.png" alt="" />
 					</div>
@@ -159,9 +158,9 @@ get_header(); // подключаем header.php ?>
 		<h4>Оставьте заявку и мы вам немедленно перезвони, поможем и подскажем</h4>
 		<form action="" class="car_one_form" novalidate  method="post">
 			<div class="form_line">
-				<input type="text" name="name" placeholder="Ваше имя">
-				<input type="tel" name="tel" placeholder="Телефон">
-				<button><h4>Отправить</h4></button>
+                <input class="find_car__name" type="text" name="name" placeholder="Ваше имя">
+                <input class="find_car__phone" type="tel" name="tel" placeholder="Телефон">
+                <button class="js_findCar"><h4>Отправить</h4></button>
 			</div>
 		</form>
 		<img src="<?php bloginfo('template_directory'); ?>/img/orange_car.png" alt="" />
@@ -200,46 +199,9 @@ get_header(); // подключаем header.php ?>
 <section class="comment">
 	<div class="container">
 		<h2><b>Отзывы</b> наших клиентов</h2>
-				<div class="owl">
-				<div class="comment__item">
-					<div class="comment__item_thumb">
-						<img src="<?php bloginfo('template_directory'); ?>/img/userpic_1.png" alt="" />
-					</div>
-					<div class="comment__item_text">
-						<h5><b>Дмитрий король</b><br>г.Донецк</h5>
-						<p>Не ожидал такой оперативности. Менеджер буквально через пять минут позвонил, и уточнил заказ.Подвеску доставили домой, даже не пришлось заморачиваться что бы ее доставить. Сработали оперативно, а главное удивили цены. Пообщали сделать на следующую покупку скидку. В общем молодцы. Я доволен. Рекомендую.
-						</p>
-					</div>
-				</div>
-				<div class="comment__item">
-					<div class="comment__item_thumb">
-						<img src="<?php bloginfo('template_directory'); ?>/img/userpic_2.png" alt="" />
-					</div>
-					<div class="comment__item_text">
-						<h5><b>Анна Весникова </b><br>г.Донецк</h5>
-						<p>  Машину купила недавно и столкнулась с проблемой замены масла. После того. как я оставила заявку и менеджер перезвонил через 5 минут и порекомендовал приехать в сервис для замены масла. Сделали все быстро и качественно, даже объяснили как долить масло в следующий раз.буду обращаться еще!</p>
-					</div>
-				</div>
-				<div class="comment__item">
-					<div class="comment__item_thumb">
-						<img src="<?php bloginfo('template_directory'); ?>/img/userpic_3.png" alt="" />
-					</div>
-					<div class="comment__item_text">
-						<h5><b>Кирилл Бойко</b><br>г.Донецк</h5>
-						<p>долго искал топливный насос на китайский мопед. Оставил заявку на деталь, перезвонили и сообщили, что в наличии нет, но могут через некоторое время привезти. Все заняло около 3-х дней. На цену доставка никак не повлияла. Очень доволен. Спасибо.</p>
-					</div>
-				</div>
-				<div class="comment__item">
-					<div class="comment__item_thumb">
-						<img src="<?php bloginfo('template_directory'); ?>/img/userpic_1.png" alt="" />
-					</div>
-					<div class="comment__item_text">
-						<h5><b>Дмитрий король</b><br>г.Донецк</h5>
-						<p>Не ожидал такой оперативности. Менеджер буквально через пять минут позвонил, и уточнил заказ.Подвеску доставили домой, даже не пришлось заморачиваться что бы ее доставить. Сработали оперативно, а главное удивили цены. Пообщали сделать на следующую покупку скидку. В общем молодцы. Я доволен. Рекомендую.
-						</p>
-					</div>
-				</div>
-				</div>
+        <div class="owl">
+            <?php echo do_shortcode( '[reviews]' ); ?>
+        </div>
 	</div>
 </section>
 <section class="footer_form">
@@ -249,10 +211,10 @@ get_header(); // подключаем header.php ?>
 			<form action="" class="footer_form_end" novalidate  method="post">
 				<h2><b>Заполните форму</b><br> и получите скидку в 5%</h2>
 				<div class="form_line">
-					<input type="text" name="name" placeholder="Ваше имя">
-					<input type="tel" name="tel" placeholder="Ваш телефон">
-					<input type="email" name="email" placeholder="Ваш Email">
-					<button><h4>Отправить</h4></button>
+                    <input class="sale__name" type="text" name="name" placeholder="Ваше имя">
+                    <input class="sale__phone" type="tel" name="tel" placeholder="Ваш телефон">
+                    <input class="sale__email" type="email" name="email" placeholder="Ваш Email">
+                    <button class="js_saleForm"><h4>Отправить</h4></button>
 				</div>
 				
 			</form>
