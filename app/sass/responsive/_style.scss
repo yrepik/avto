@@ -1,0 +1,350 @@
+@media only screen and (max-width: 1024px) {
+	.header_avto{
+		display: block;
+		background-size: cover;
+		height: 575px;
+    	width: 100%;
+		background-image: url('../img/plansh_head_fon.png');
+		h2{
+			float: left;
+			width: 100%;
+			font-size: 23px;
+			b{
+				font-size: 23px;
+				font-weight: 100;
+			}
+		}
+		img{
+			display: none;
+		}
+		.header_form{
+			width: 100%;
+			float: left;
+			height: 430px;
+			buttom{
+				margin-top: 0;
+			}
+		}	
+	}
+	.razdelitel{
+		display: none;
+	}
+	.howto{	
+		h2{
+			font-size: 30px;
+			b{
+				font-size: 30px;
+			}
+		}
+		&__item{
+			width: 33.3%;
+			h4{
+				width: 100%;
+				padding: 10px;
+				font-size: 21px;
+			}
+			&:after{
+				right: -15px;	
+			}
+		}
+	}
+	.catalog{
+		h2{
+			font-size: 30px;
+			padding-bottom: 40px;
+		}
+		.catalog__flex{
+			.catalog__item{
+				margin: 50px 45px;
+			}
+			.accordeon{
+				display: none;
+			}
+		}
+
+	}
+	.car_one{
+		h2{
+			font-size: 30px;
+			padding-bottom: 40px;
+		}
+		h4{
+			font-size: 20px;
+		}
+		.car_one_form{
+			padding: 0;
+			.form_line{
+				input{
+					width: 30%;
+				}
+				button{
+					 width: 30%;
+    				margin-left: 0px;
+				}
+			}
+		}
+		img{
+			 height: 245px;
+    		left: 29px;
+		}
+	}
+	.car_two{
+		background-color: #3A3734;
+		background-image: none;
+		height: auto;
+		h2{
+			padding-bottom: 40px;
+		}
+		.whyweare__item{
+			    width: 40.6%;
+    			margin: 66px 30px;
+		}
+	}
+
+
+	.footer_form{
+		.border{
+			width: 90%;
+			img{
+				height: 225px;
+    			left: 78px;
+    			margin-top: 152px;
+			}
+			h2{
+				font-size: 18px;
+				b{
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	
+}
+
+@media only screen and (max-width: 770px) {
+	
+}
+
+@media only screen and (max-width: 736px) {
+
+
+.header_avto{
+	display: block;
+	background-size: cover;
+	height: 905px;
+    width: 100%;
+	background-image: url('../img/mob_head_fon.png');
+	h2{
+		float: left;
+		width: 100%;
+		font-size: 23px;
+		b{
+			font-size: 23px;
+			font-weight: 100;
+		}
+	}
+	img{
+		display: none;
+	}
+	.header_form{
+		width: 100%;
+		float: left;
+	}
+}
+.razdelitel{
+	display: none;
+}
+.howto{	
+	&__item{
+		float: left;
+		width: 100%;
+		&:after{
+			display: none;	
+		}
+	}
+}
+.catalog{
+	h2{
+		font-size: 23px;
+		text-align: center;
+		b{
+			font-size: 23px;
+		}
+	}
+	h4{
+		font-size: 18px;
+		b{
+			font-size: 18px;
+		}
+	}
+	.catalog__flex{
+		.catalog__item{
+			margin: 10px 20px;
+		}
+		.accordeon{
+			display: block !important;
+			
+			width: 260px;
+			height: auto;
+			h4{
+				border-radius: 10px;
+				background-color: #ffec00;
+				height: 40px;
+				margin: 0;
+				font-size: 17px;
+				line-height: 40px;
+			}
+			dd{
+				 padding: 40px 5px 10px 5px;
+			}
+		}
+	}
+}
+.car_one{
+	h2{
+		font-size: 23px;
+		text-align: center;
+		b{
+			font-size: 23px;
+		}
+	}
+	h4{
+		font-size: 18px;
+		b{
+			font-size: 18px;
+		}
+	}
+	img{
+		height: auto;
+    	left: 0;
+   		width: 100%;
+	}
+	
+	.car_one_form{
+		padding: 0;
+		float: left;
+		width: 100%;
+		.form_line{
+			input{
+				width: 100%;
+				float: left;
+				margin-top: 30px;
+				margin-right: 0;
+			}
+			button {
+    			background-color: #ffec00;
+    			border: none;
+   				width: 100%;
+    			margin-left: 0;
+    			margin-top: 30px;
+    			h4{
+    				text-align: center;
+    				padding: 0;
+    			}
+    		}
+		}
+	}
+}
+.car_two{
+	height: auto;
+	h2{
+		font-size: 23px;
+		text-align: center;
+		b{
+			font-size: 23px;
+		}
+	}
+	.whyweare__item{
+		margin:66px 0;
+		width: 100%;
+		
+	}
+}
+.comment{
+	height: auto;
+	h2{
+		font-size: 23px;
+		text-align: center;
+		b{
+			font-size: 23px;
+		}
+	}
+	h4{
+		font-size: 18px;
+		b{
+			font-size: 18px;
+		}
+	}
+	.owl{
+		.comment__item_text{
+   			height: 440px;
+		}
+	}
+}
+.footer_form{
+	img{
+		display: none;
+	}
+	.border{
+		width: 80%;
+		height: 720px;
+		h3{
+			width: 100%;
+			font-size: 23px;
+			line-height: 28px;
+			b{
+				font-size: 23px;
+			}
+		}
+		.footer_form_end{
+			h2{
+				width: 100%;
+			}
+			.form_line{
+				width: 100%;
+				input{
+					width: 90%;
+					margin-right: 0;
+					margin-left: 10px;
+				}
+				button{
+					width: 90%;
+					margin-left: 10px;
+				}
+			}
+		}
+		.cont__info{
+			width: 100%;
+			top: 0;
+			margin-top: 3px;
+			text-align: center;
+			h2{
+				width: 100%;
+				font-size:23px;
+				padding: 0;
+				text-align: center;
+			}
+			.knopka{
+				width: 90%;
+				height: 30px;
+				background-color: #ffec00;
+				line-height: 30px;
+			}
+		}
+	}
+}
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+	
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
