@@ -22,6 +22,22 @@
 			</div>
 		</div>
 	</footer>
+	<div class="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">x</span>
+    <form action="" class="modal_form" novalidate  method="post">
+			<div class="modal_form_line">
+                <input class="form_line__name" type="text" name="name" placeholder="Ваше имя">
+                <input class="form_line__phone" type="tel" name="tel" placeholder="Ваш телефон">
+                <input class="form_line__email" type="email" name="email" placeholder="Ваш Email">
+                <TEXTAREA NAME="address" WRAP="virtual">Ваш адрес...</TEXTAREA>
+			</div>
+            <button class="js_headerAuto"><h4>Оставить свою заявку</h4></button>
+		</form>
+  </div>
+
+</div>
 <?php wp_footer(); // необходимо для работы плагинов и функционала  ?>
 </body>
 </html>

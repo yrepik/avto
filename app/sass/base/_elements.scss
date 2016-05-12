@@ -1,0 +1,122 @@
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    right: 10px;
+    position: relative;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.myModal {
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	height: 180vh;
+	.modal-content {
+		position: absolute;
+		width: 300px;
+		top: 75px;
+		left: 50%;
+		border: 7px solid #ffec00;
+		border-radius: 10px;
+		background-color: #0a0a0a;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		.modal_form{
+	    	height: 290px;
+			padding: 0 20px;
+			height: 408px;
+			position: relative;
+			float: right;
+			width: 100%;
+			font-size: 12px;
+			letter-spacing: 2px;
+			margin-top: 37px;
+			h2{	
+				padding: 27px 0px 25px 0px;
+				margin: 0;
+				color: #ffec00;
+				 font-size: 14px;
+		    	line-height: 19px;
+				text-align: center;
+				font-family: $ql;
+				b{
+					text-transform: none;
+					font-size: 28px;
+					font-family: $im;
+					font-weight: 100;
+					
+				}
+			}
+			.modal_form_line{
+				input,
+				textarea{
+					padding: 0 15px;
+					width: 100%;
+					background-color: #eeefea;
+					line-height: 44px;
+					border: none;
+					margin: 12px 0;
+				}
+				input::-webkit-input-placeholder {
+					color:#000000;
+					font-size: 17px;
+					font-family: $ql;
+					text-transform: uppercase;
+				}
+					::-moz-placeholder          {color:#000000;}
+					:-moz-placeholder           {color:#000000;}
+					:-ms-input-placeholder {color:red;}
+				
+			}	
+			button.js_headerAuto{
+				background-color: #ffec00;
+				border: none;
+				width: 100%;
+		    	margin-left: 0px;
+		    	margin-top: 5px;
+			}
+		}
+	}
+}

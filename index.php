@@ -56,8 +56,9 @@ get_header(); // подключаем header.php ?>
 		<h2><b>Каталог</b> нашей продукции</h2>
 		<h4>Заполните форму <b>“узнать цену”</b> прямо сейчас и наши менеджеры свяжуться с вами и
 дадут полную информацию по цене и наличию запчасти</h4>
-<div class="catalog__flex">
-			<div class="catalog__item"><h4>Детали двигателя</h4>
+		<div class="catalog__flex">
+			<div class="catalog__item">
+				<h4>Детали двигателя</h4>
 				<dd>
 					<div class="catalog__item_pic">
 					<img src="<?php bloginfo('template_directory'); ?>/img/engine.png" alt="" />
@@ -65,92 +66,97 @@ get_header(); // подключаем header.php ?>
 					<div class="catalog__item_text">
 					<p>Ремни ГРМ, ролики, датчики и многое другое</p>
 					</div>
-					<button><h5>Узнать цену</h5></button>
+					<button class="myBtn"><h5>Узнать цену</h5></button>
 				</dd>
 			</div>
-		</button>
-		<div class="catalog__item"><h4>тормозная система</h4>
-			<dd>
-				<div class="catalog__item_pic">
-				<img src="<?php bloginfo('template_directory'); ?>/img/brake.png" alt="" />
-				</div>
-				<div class="catalog__item_text">
-				<p>тормозные диски, колодки, суппорта</p>
-				</div>
-				<button><h5>Узнать цену</h5></button>
-			</dd>	
+			<div class="catalog__item">
+				<h4>тормозная система</h4>
+				<dd>
+					<div class="catalog__item_pic">
+					<img src="<?php bloginfo('template_directory'); ?>/img/brake.png" alt="" />
+					</div>
+					<div class="catalog__item_text">
+					<p>тормозные диски, колодки, суппорта</p>
+					</div>
+					<button class="myBtn"><h5>Узнать цену</h5></button>
+				</dd>	
+			</div>
+			<div class="catalog__item">
+			<h4>детали подвески</h4>
+				<dd>
+					<div class="catalog__item_pic">
+					<img src="<?php bloginfo('template_directory'); ?>/img/suspension.png" alt="" />
+					</div>
+					<div class="catalog__item_text">
+					<p>амортизаторы, рычаги, сайлентблоки, стойки</p>
+					</div>	
+					<button class="myBtn"><h5>Узнать цену</h5></button>
+				</dd>
+			</div>
+			<div class="catalog__item">
+				<h4>детали сцепления</h4>
+				<dd>
+					<div class="catalog__item_pic">
+					<img src="<?php bloginfo('template_directory'); ?>/img/clutch.png" alt="" />
+					</div>
+					<div class="catalog__item_text">
+					<p>диск сцепления, нажимной диск, система управления,  маховик</p>
+					</div>	
+					<button class="myBtn"><h5>Узнать цену</h5></button>
+				</dd>
+			</div>
+			<div class="catalog__item">
+				<h4>охлаждение</h4>
+				<dd>
+					<div class="catalog__item_pic">
+					<img src="<?php bloginfo('template_directory'); ?>/img/cooling.png" alt="" />
+					</div>
+					<div class="catalog__item_text">
+					<p>радиаторы, водяные насосы, термостаты</p>
+					</div>	
+					<button class="myBtn"><h5>Узнать цену</h5></button>
+				</dd>
+			</div>
+			<div class="catalog__item">
+				<h4>фильтра</h4>
+				<dd>
+					<div class="catalog__item_pic">
+					<img src="<?php bloginfo('template_directory'); ?>/img/filter.png" alt="" />
+					</div>
+					<div class="catalog__item_text">
+					<p>Масляные, воздушные, топливные, гидравлические</p>
+					</div>	
+					<button class="myBtn"><h5>Узнать цену</h5></button>
+				</dd>
+			</div>
+			<div class="catalog__item ">
+				<h4>масла и жидкости</h4>
+				<dd>
+					<div class="catalog__item_pic">
+					<img src="<?php bloginfo('template_directory'); ?>/img/oil.png" alt="" />
+					</div>
+					<div class="catalog__item_text">
+					<p>моторные, трансмиссионные жидкости ГУРа, и АКПП</p>
+					</div>	
+					<button class="myBtn"><h5>Узнать цену</h5></button>
+				</dd>
+			</div>
+			<div class="catalog__item">
+				<h4>аккумуляторы</h4>
+				<dd>
+					<div class="catalog__item_pic">
+					<img src="<?php bloginfo('template_directory'); ?>/img/battrey.png" alt="" />
+					</div>
+					<div class="catalog__item_text">
+					<p>Для легковых и грузовыз авто и мотоциклов</p>
+					</div>	
+					<button class="myBtn"><h5>Узнать цену</h5></button>
+				</dd>
+			</div>
 		</div>
-		<div class="catalog__item">
-		<h4>детали подвески</h4>
-			<dd>
-				<div class="catalog__item_pic">
-				<img src="<?php bloginfo('template_directory'); ?>/img/suspension.png" alt="" />
-				</div>
-				<div class="catalog__item_text">
-				<p>амортизаторы, рычаги, сайлентблоки, стойки</p>
-				</div>	
-				<button><h5>Узнать цену</h5></button>
-			</dd>
-		</div>
-		<div class="catalog__item">
-			<h4>детали сцепления</h4>
-			<dd>
-				<div class="catalog__item_pic">
-				<img src="<?php bloginfo('template_directory'); ?>/img/clutch.png" alt="" />
-				</div>
-				<div class="catalog__item_text">
-				<p>диск сцепления, нажимной диск, система управления,  маховик</p>
-				</div>	
-				<button><h5>Узнать цену</h5></button>
-			</dd>
-		</div>
-		<div class="catalog__item"><h4>охлаждение</h4>
-			<dd>
-				<div class="catalog__item_pic">
-				<img src="<?php bloginfo('template_directory'); ?>/img/cooling.png" alt="" />
-				</div>
-				<div class="catalog__item_text">
-				<p>радиаторы, водяные насосы, термостаты</p>
-				</div>	
-				<button><h5>Узнать цену</h5></button>
-			</dd>
-		</div>
-		<div class="catalog__item"><h4>фильтра</h4>
-			<dd>
-				<div class="catalog__item_pic">
-				<img src="<?php bloginfo('template_directory'); ?>/img/filter.png" alt="" />
-				</div>
-				<div class="catalog__item_text">
-				<p>Масляные, воздушные, топливные, гидравлические</p>
-				</div>	
-				<button><h5>Узнать цену</h5></button>
-			</dd>
-		</div>
-		<div class="catalog__item "><h4>масла и жидкости</h4>
-			<dd>
-				<div class="catalog__item_pic">
-				<img src="<?php bloginfo('template_directory'); ?>/img/oil.png" alt="" />
-				</div>
-				<div class="catalog__item_text">
-				<p>моторные, трансмиссионные жидкости ГУРа, и АКПП</p>
-				</div>	
-				<button><h5>Узнать цену</h5></button>
-			</dd>
-		</div>
-		<div class="catalog__item"><h4>аккумуляторы</h4>
-			<dd>
-				<div class="catalog__item_pic">
-				<img src="<?php bloginfo('template_directory'); ?>/img/battrey.png" alt="" />
-				</div>
-				<div class="catalog__item_text">
-				<p>Для легковых и грузовыз авто и мотоциклов</p>
-				</div>	
-				<button><h5>Узнать цену</h5></button>
-			</dd>
-		</div>
-</div>
-		
+
 	</div>
+
 </section>
 <section class="car_one">
 	<div class="container">
@@ -230,4 +236,5 @@ get_header(); // подключаем header.php ?>
 		</div>
 	</div>
 </section>
+
 <?php get_footer(); // подключаем footer.php ?>
